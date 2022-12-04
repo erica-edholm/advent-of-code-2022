@@ -34,13 +34,6 @@ TO_YOUR_MOVE = {
 }
 
 
-@click.command(help='Solution for day 2')
-def day2():
-    data = fetch_input(2)
-    print_solution(1, solve_part_1(data))
-    print_solution(2, solve_part_2(data))
-
-
 def solve_part_1(data):
     points = 0
     for strategy in data:
